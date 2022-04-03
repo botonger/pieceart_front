@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# 피사트(PieceART)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 👓 소개
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+> 미술품 경매 및 조각 투자 웹사이트
+<br>
 
-### `npm start`
+미술품 옥션 사이트에서 제공하는 경매 서비스와 (주)서울옥션블루에서 운영하는 미술품 공동구매 플랫폼 SOTWO의 아이디어를 차용하여 기본 기능을 직접 구현한 미니 프로젝트입니다
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+##### * 프로젝트 기간: 2022.03.11 - 2022.04.01 (약 3주)
+##### * 팀원: 신채연, 공인배, 이종훈
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+![Untitled_Artwork 3](https://user-images.githubusercontent.com/99788738/161419579-4c364267-f288-4938-bdab-bb00472598be.jpg)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Untitled_Artwork 4](https://user-images.githubusercontent.com/99788738/161419585-5f9f80ad-5bfd-4c16-95d1-3180875d00f8.jpg)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 기술 스택
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🔙 프론트엔드: React, JavaScript, HTML/CSS
 
-### `npm run eject`
+📲 백엔드: Java, Springboot, Gradle, MariaDB, RDS(mariaDB), Python, Swagger, JWT
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+📃 배포 등: AWS(EC2-linux, S3, CloudFront), SSL, HTTPS
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+👨‍👨‍👧  협업툴: Notion
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<br>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🗒 설계
 
-## Learn More
+DB 구조(ERD)
+![ERD](https://user-images.githubusercontent.com/99788738/161421512-bfe5b98e-1db3-4636-b77f-9be1e2d37f4e.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<a href="https://github.com/botonger/pieceart_back/blob/main/doc/api.md">API 설계</a>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<a href="https://github.com/botonger/pieceart_back/blob/main/doc/frame.md">화면 설계</a>
 
-### Code Splitting
+데이터 크롤링 및 저장
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 메인 서비스 / 구현 기능
 
-### Analyzing the Bundle Size
+- 메인페이지(스크롤, 메인 이미지 무한 변경)
+- 검색페이지 : 검색어 필터(작품, 작가, 가격, 인기도, 마감일, 수익률)
+- 상세페이지 : 위시리스트 추가/삭제, 응찰(현재가 미만 응찰 불가), 조각 구매(최대 남은 조각수만큼 선택 가능)
+- 회원가입 / 로그인(자체 로그인-jwt 토큰, 스프링 시큐리티, 구글 로그인) / 로그아웃
+- 입찰 현황(취소)
+- 조각 보유 현황(취소)
+- 위시리스트 현황(추가/삭제)
+- 회원정보수정 (비밀번호 변경)
+- 공지사항(페이지네이션, 검색어, 권리자 로그인 시 글쓰기, 수정, 삭제 버튼 나타남, 파일 첨부 포함)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<br>
 
-### Making a Progressive Web App
+## 시연영상
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#### 회원가입, 로그인
 
-### Advanced Configuration
+https://user-images.githubusercontent.com/99788738/161420181-282d8fcf-fae2-4127-87a1-fc8dbf54b147.mov
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### 응찰, 조각구매, 마이페이지
 
-### Deployment
+https://user-images.githubusercontent.com/99788738/161420399-e5ffe07b-092a-469e-bb34-3ca800aca6b5.mov
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+#### 검색
 
-### `npm run build` fails to minify
+https://user-images.githubusercontent.com/99788738/161420229-83f6d2ca-f48d-4ee9-83c5-14c72b4a5c90.mov
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+<br>
+
+## 👨‍👨‍👧‍👧 협업 규칙
+
+<a href="https://github.com/botonger/pieceart_back/blob/main/doc/rules.md">협업 규칙</a>
+
