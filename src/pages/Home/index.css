@@ -1,0 +1,21 @@
+::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+    -ms-overflow-style: none; /* IE, Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.top-button-box {
+    text-align: center;
+}
+.topButton {
+    color: white;
+    background-color: transparent;
+}
+.topButton:hover {
+    background-color: transparent;
+}
+
+main{
+    height: auto;
+    min-height: 100vh;
+}

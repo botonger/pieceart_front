@@ -1,0 +1,22 @@
+.modal-box {
+    position: fixed;
+    background-color: #282c3497;
+    margin: 0px;
+    width: 150px;
+    height: 190px;
+    right: 0px;
+    z-index: 5;
+    transition: all 0.5s ease-in-out;
+}
+.modal-box * {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    user-select: none;
+}
+.open {
+    top: 80px;
+}
+.close {
+    top: -120px;
+}

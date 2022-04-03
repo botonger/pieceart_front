@@ -1,0 +1,129 @@
+::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+    -ms-overflow-style: none; /* IE, Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.notice-box {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+/* 공지 검색 */
+notice-search {
+    display: flex;
+    margin-top: 200px;
+    width: 700px;
+    justify-content: end;
+    height: 30px;
+    margin-bottom: 30px;
+}
+notice-search Input {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    height: 100%;
+    width: 200px;
+    font-size: 0.9rem;
+}
+notice-search button {
+    height: 90%;
+    margin-left: 20px;
+}
+
+/* 공지 테이블 */
+.notice-table {
+    width: 700px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+.notice-table thead tr th:nth-child(1) {
+    width: 8%;
+}
+.notice-table thead tr th:nth-child(2) {
+    width: 55%;
+}
+.notice-table thead tr th:nth-child(3) {
+    width: 10%;
+}
+.notice-table thead tr th:nth-child(4) {
+    width: 19%;
+}
+.notice-table thead tr th:nth-child(5) {
+    width: 8%;
+}
+.notice-table tbody tr td:nth-child(2) {
+    text-align: start;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+.notice-table tbody tr td:nth-child(2):hover {
+    font-weight: bold;
+}
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.267);
+}
+
+tbody tr td {
+    font-size: 0.9rem;
+}
+.notice-content {
+    transition: 0.5s all ease-in-out;
+}
+.notice-content td {
+    text-align: justify;
+    padding: 40px;
+    padding-left: 70px;
+    line-height: 2rem;
+    background-color: rgba(255, 255, 255, 0.185);
+    color: white;
+}
+.notice-toggle-true {
+    visibility: visible !important;
+}
+.notice-toggle-false {
+    visibility: collapse;
+}
+.notice-bold {
+    font-weight: bold;
+}
+/* 공지 페이지네이션 */
+notice-page {
+    display: flex;
+    width: 700px;
+    justify-content: center;
+}
+notice-page a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+
+notice-page .page {
+    color: white;
+    margin: 10px;
+}
+
+notice-page .page:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+.notice-buttons {
+    display: flex;
+}
+
+.notice-buttons button {
+    width: 60px;
+    font-size: 0.8rem;
+    height: 20px;
+    margin-right: 5px;
+}

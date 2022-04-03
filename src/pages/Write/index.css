@@ -1,0 +1,52 @@
+.notice-write-box {
+    margin-top: 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notice-write-box > div {
+    background-color: white;
+    width: 600px;
+    height: 75vh;
+    padding: 24px;
+}
+.write-form-class {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    width: 550px;
+}
+.write-form-class input {
+    margin-left: -20px;
+    background-color: rgb(231, 231, 231);
+    border-radius: 5px;
+    color: black;
+    font-size: 0.9rem;
+    width: 100%;
+}
+.write-form-class textarea {
+    background-color: rgb(231, 231, 231);
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    height: 400px;
+    font-size: 1rem;
+    padding: 10px;
+}
+.write-form-class:nth-child(3) {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    position: relative;
+}
+.write-form-class:nth-child(3) input {
+    width: 120px;
+}
+
+.write-form-class:nth-child(3) button {
+    width: 160px;
+    margin-left: 20px;
+}
+#file {
+    display: none !important;
+}

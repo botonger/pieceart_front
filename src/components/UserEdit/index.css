@@ -1,0 +1,28 @@
+.edit {
+    margin-top: -150px;
+    animation: appearEdit 2s ease-in-out;
+}
+
+.edit button:nth-child(3) {
+    margin-bottom: 20px;
+}
+
+.edit button:nth-child(4) {
+    background-color: brown;
+    color: white;
+}
+
+@keyframes appearEdit {
+    0% {
+        margin-top: 0px;
+        opacity: 80%;
+    }
+    20% {
+        margin-top: -150px;
+        opacity: 100%;
+    }
+    100% {
+        margin-top: -150px;
+        opacity: 100%;
+    }
+}

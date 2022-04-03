@@ -1,0 +1,128 @@
+.detail-container {
+    text-align: center;
+    padding: 20px;
+    padding-top: 150px;
+    background-color: white;
+}
+.detail-top {
+    display: flex;
+    justify-content: center;
+}
+.detail-top > div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    background-color: rgb(231, 231, 231);
+}
+.detail-top div img {
+    width: 80%;
+}
+.detail-top > div:nth-child(2) {
+    margin-left: 70px;
+    padding-top: 10px;
+}
+
+.detail-top > div:nth-child(2) div {
+    margin-bottom: 20px;
+    /* border: 1px solid red; */
+    text-align: justify;
+}
+
+.detail-top > div:nth-child(2) div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+}
+.detail-top > div:nth-child(2) div:nth-child(2) {
+    font-size: 1.5rem;
+}
+.detail-top > div:nth-child(2) div:nth-child(3) {
+    margin-bottom: 30px;
+}
+.detail-top > div:nth-child(2) div:nth-child(4) {
+    font-size: 0.9rem;
+    margin-bottom: -10px;
+}
+.detail-top > div:nth-child(2) div:nth-child(5) {
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+}
+.detail-top > div:nth-child(2) div:nth-child(6) span,
+.detail-top > div:nth-child(2) div:nth-child(7) span,
+.detail-top > div:nth-child(2) div:nth-child(8) span {
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+.detail-top > div:nth-child(2) div:nth-child(9) {
+    font-size: 0.9rem;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: right;
+    color: rgb(78, 77, 77);
+}
+.detail-top > div:nth-child(2) div:nth-child(9) span {
+    color: salmon;
+    font-weight: bold;
+}
+.detail-top > div:nth-child(2) div:nth-child(11) {
+    text-align: right;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+}
+.detail-top > div:nth-child(2) div:nth-child(12) {
+    text-align: right;
+    color: rgb(116, 238, 146);
+}
+.detail-bid-button,
+.detail-buy-button {
+    height: 30px;
+}
+.detail-bid-button input,
+.detail-buy-button input {
+    background-color: white;
+    border-radius: 0;
+    width: 60%;
+    height: 100%;
+    color: rgb(78, 77, 77);
+    font-size: 0.9rem;
+}
+button.control {
+    background-color: rgb(231, 231, 231);
+    border-radius: 0;
+    width: 50px;
+    height: 100%;
+}
+.detail-bid-button button:last-child,
+.detail-buy-button button:last-child {
+    width: 40px;
+    height: 100%;
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid rgb(184, 250, 200);
+}
+
+.detail-bid-button button:last-child:hover,
+.detail-buy-button button:last-child:hover {
+    background-color: rgb(184, 250, 200);
+}
+.detail-bottom {
+    padding: 50px;
+}
+.detail-bottom > div div {
+    text-align: justify;
+    margin-bottom: 30px;
+    line-height: 2.5rem;
+}
+.detail-bottom > div > div:nth-child(1) {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+.detail-bottom > div > div:nth-child(1) span {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(148, 146, 146);
+}
+.detail-bottom > div > div:nth-child(2) {
+    font-size: 1.2rem;
+}

@@ -1,0 +1,18 @@
+button {
+    user-select: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    font-size: 0.8rem;
+    width: 90px;
+    height: 40px;
+    letter-spacing: 0.1rem;
+    color: #282c34;
+    background-color: rgb(184, 250, 200);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(116, 238, 146);
+}

@@ -1,0 +1,94 @@
+.wishlist-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* height: 100vh; */
+}
+.wishlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 700px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 20px;
+}
+.wishlist img {
+    width: 350px;
+    height: 430px;
+    margin-bottom: 20px;
+    border-radius: 10px 10px 0px 0px;
+}
+.delete-wish {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgba(127, 255, 212, 0.692);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255);
+    z-index: 1;
+}
+.delete-wish Button {
+    width: 120px;
+    margin-bottom: 20px;
+}
+.delete-wish button:hover {
+    cursor: pointer;
+    background-color: rgb(242, 77, 105) !important;
+}
+.delete-wish button:nth-child(1):hover {
+    background-color: rgb(66, 255, 66) !important;
+}
+
+.wish-detail-box {
+    width: 100%;
+}
+
+.wish-detail-box .wish-detail {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(78, 65, 48);
+    height: 170px;
+}
+.wish-detail-box .wish-detail > * {
+    margin-bottom: 10px;
+}
+.wish-detail-box .wish-detail .wish-title {
+    font-size: 1.1rem;
+    color: rgb(78, 65, 48);
+    border-bottom: 1px solid #282c347e;
+    padding-bottom: 25px;
+}
+
+.wish-detail-box .wish-detail .wish-artist {
+    font-size: 1.5rem;
+    color: burlywood;
+}
+
+.wish-heart-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 25px;
+}
+
+.wish-amount span:nth-child(1),
+.wish-sum span {
+    font-weight: bold;
+    margin-left: 10px;
+    /* font-size: 1rem; */
+    /* padding-top: 40px;
+    border-top: 1px solid #282c347e; */
+}
