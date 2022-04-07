@@ -73,6 +73,10 @@ https://user-images.githubusercontent.com/99788738/161420399-e5ffe07b-092a-469e-
 
 https://user-images.githubusercontent.com/99788738/161420229-83f6d2ca-f48d-4ee9-83c5-14c72b4a5c90.mov
 
+#### 공지사항
+
+https://user-images.githubusercontent.com/99788738/162109584-64df2bb9-7e3d-4889-8a83-1d48699b0fda.mov
+
 
 
 <br>
