@@ -13,6 +13,10 @@ class AuthService {
     removeStorage() {
         return localStorage.removeItem('t');
     }
+    //세션스토리지 저장
+    setSession(r) {
+        return sessionStorage.setItem('r', r);
+    }
 }
 
 export default new AuthService();

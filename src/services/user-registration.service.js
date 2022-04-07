@@ -30,6 +30,7 @@ class UserService {
         return http.post('/login', user);
     }
 
+    //로그아웃
     logout() {
         sessionStorage.removeItem('r');
         localStorage.removeItem('t');

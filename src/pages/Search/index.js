@@ -44,9 +44,7 @@ const Search = () => {
     };
     const byPrice = () => {
         const arrCopied = [...artworksList];
-        setArtworksList(
-            arrCopied.sort((a, b) => new Date(b.initialPrice) - new Date(a.initialPrice)),
-        );
+        setArtworksList(arrCopied.sort((a, b) => b.initialPrice - a.initialPrice));
     };
     const byProfit = () => {
         const arrCopied = [...artworksList];

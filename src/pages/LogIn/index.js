@@ -40,7 +40,7 @@ const LogIn = () => {
         const response = await userService.login({ email, password, social });
         const t = response.data.token;
         if (response.data.role === 'admin') {
-            sessionStorage.setItem('r', JSON.stringify(response.data.role));
+            authService.setSession(JSON.stringify(response.data.role));
         }
         if (t) {
             authService.setStorage(t);
@@ -59,7 +59,7 @@ const LogIn = () => {
         const t = data.data.token;
 
         if (t) {
-            localStorage.setItem('t', JSON.stringify(t));
+            authService.setStorage(t);
             return navigate('/mypage');
         }
     };
